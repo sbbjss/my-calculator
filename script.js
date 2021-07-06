@@ -12,8 +12,7 @@ class Calculator {
     }
 
     delete() {
-        const newCurrentOperand = this.currentOperand.slice(0, -1);
-        this.currentOperand = newCurrentOperand;
+        this.currentOperand = this.currentOperand.toString().slice(0, -1);
     }
 
     appendNumber(number) {
